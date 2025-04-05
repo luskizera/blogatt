@@ -1,0 +1,186 @@
+/* Reset básico para evitar interferências */
+* {
+  box-sizing: border-box;
+}
+
+/* Estilizar o container */
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Estilizar a navbar */
+.navbar {
+  padding: 10px 0;
+  background-color: #f8f9fa; /* Cor de fundo leve para contraste */
+}
+
+/* Estilizar o logo */
+.navbar-brand img {
+  height: 36px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.navbar-brand-text {
+  font-size: 24px;
+  font-weight: 700;
+  color: #06677F;
+}
+
+/* Estilizar o botão de alternância */
+.navbar-toggler {
+  border: 0;
+  padding: 5px;
+}
+
+.navbar-toggler .material-symbols-outlined {
+  font-size: 24px;
+  color: #06677F;
+}
+
+/* Garantir que os itens da navbar fiquem alinhados horizontalmente */
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav-item {
+  color: #06677F !important;
+  font-size: 16px;
+  line-height: 20px;
+  margin-right: 12px;
+  padding: 10px 8px;
+  text-decoration: none;
+}
+
+.nav-item:hover {
+  color: #044a5b !important;
+}
+
+/* Estilizar o container de ações (idioma e botão) */
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Estilizar o menu de idioma */
+.i18nMenu-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.custom-nav-item {
+  padding: 0 !important;
+  margin-right: 0 !important;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: transparent;
+  color: #06677F;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+.dropdown-menu {
+  min-width: 100px;
+}
+
+.dropdown-item {
+  font-size: 14px;
+  color: #06677F;
+}
+
+.dropdown-item:hover {
+  background-color: #f8f9fa;
+}
+
+/* Estilizar o botão Access Slingui */
+.button-action {
+  text-decoration: none;
+  margin-left: 10px;
+  padding: 0 15px;
+  height: 40px;
+  width: auto;
+  background: #06677F !important;
+  color: #FFF !important;
+  font-size: 16px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-in;
+}
+
+.button-action:hover {
+  transform: scale(1.05);
+}
+
+.button-action span.material-symbols-outlined {
+  margin-right: 8px;
+  font-size: 21px;
+}
+
+/* Media Queries */
+@media (max-width: 992px) {
+  .navbar-collapse {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background: white;
+    z-index: 1000;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-item {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .navbar-actions {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 15px;
+  }
+
+  .button-action {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-brand img {
+    height: 32px;
+  }
+
+  .button-action {
+    margin-left: 0;
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 378px) {
+  .navbar-brand img {
+    height: 28px;
+  }
+
+  .navbar-toggler {
+    margin-top: 0;
+  }
+}
