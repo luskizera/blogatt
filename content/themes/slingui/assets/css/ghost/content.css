@@ -47,11 +47,11 @@
 }
 
 .gh-content [id]:not(:first-child) {
-    margin: 1.5em 0 0;
+    margin: 24px 0 0;
 }
 
 .gh-content > [id] + * {
-    margin-top: 1.5rem;
+    margin-top: 24px;
 }
 
 .gh-content [id] + .kg-card,
@@ -64,16 +64,16 @@
 .gh-canvas > ul,
 .gh-canvas > dl,
 .gh-canvas > p {
-    font-family: var(--font-serif);
+    font-family: var(--gh-font-body);
     font-weight: 400;
-    font-size: 2rem;
-    line-height: 1.6em;
+    font-size: 16px;
+    line-height: 24px;
 }
 
 .gh-content > ul,
 .gh-content > ol,
 .gh-content > dl {
-    padding-left: 1.9em;
+    padding-left: 30.4px;
 }
 
 .gh-content hr {
@@ -92,10 +92,10 @@
 .gh-content blockquote::before {
     content: "";
     position: absolute;
-    left: -1.5em;
+    left: -24px;
     top: 0;
     bottom: 0;
-    width: 0.3rem;
+    width: 4.8px;
     background: var(--color-primary);
 }
 
@@ -105,7 +105,7 @@
     .gh-canvas ul,
     .gh-canvas dl,
     .gh-canvas p {
-        font-size: 1.8rem;
+        font-size: 28.8px;
     }
 
     .gh-content blockquote::before {
@@ -126,12 +126,12 @@
 }
 
 figcaption {
-    padding: 1.5rem 1.5rem 0;
+    padding: 24px 24px 0;
     text-align: center;
     color: rgba(0,0,0,0.5);
     font-weight: 600;
-    font-size: 1.3rem;
-    line-height: 1.4em;
+    font-size: 20.8px;
+    line-height: 22.4px;
 }
 
 figcaption strong {
@@ -140,14 +140,14 @@ figcaption strong {
 
 .gh-canvas :not(pre) code {
     vertical-align: middle;
-    padding: 0.15em 0.4em 0.15em;
+    padding: 2.4px 6.4px 2.4px;
     border: #e1eaef 1px solid;
     font-weight: 400 !important;
-    font-size: 0.9em;
-    line-height: 1em;
+    font-size: 14.4px;
+    line-height: 16px;
     color: #dc0050;
     background: #f0f6f9;
-    border-radius: 0.25em;
+    border-radius: 4px;
 }
 
 .gh-canvas > pre {
@@ -206,14 +206,14 @@ figcaption strong {
 }
 
 .gh-content th {
-    padding: 0.5em 0.8em;
+    padding: 8px 12.8px;
     text-align: left;
-    font-size: .75em;
+    font-size: 12px;
     text-transform: uppercase;
 }
 
 .gh-content td {
-    padding: 0.4em 0.7em;
+    padding: 6.4px 11.2px;
 }
 
 .gh-content tbody tr:nth-child(2n + 1) {
